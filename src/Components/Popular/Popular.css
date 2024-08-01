@@ -1,0 +1,26 @@
+.popular{
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    width: 90%;
+}
+
+.popular_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media(max-width:800px){
+  .popular{
+    height: 100%;
+  }
+ 
+  .popular_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+  gap: 20px;
+}
+
+}

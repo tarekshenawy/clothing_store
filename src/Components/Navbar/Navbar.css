@@ -1,0 +1,118 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 3%;
+   
+}
+nav .nav-left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+nav ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+ nav ul li hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    background-color: red;
+  
+}
+
+
+nav .nav-end{
+    display: flex;
+    align-items: center;
+  
+}
+nav .nav-end button{
+    padding: 8px 5px;
+    width: 80px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid gray;
+    background-color: #fff;
+    margin-right: 5px;
+    cursor: pointer;
+   
+}
+nav .nav-end button:active{
+    background-color: gold;
+}
+
+nav .nav-end  .count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10px;
+    margin-top: -20px;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.menu_icon{
+  width: 30px;
+    display: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+@media(min-width:600px) and (max-width:800px){
+   
+    nav .nav-left h2{
+        font-size: 15px;
+
+    }
+    nav ul{
+        gap: 20px;
+    }
+ 
+   
+}
+@media(max-width:599px){
+    nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+       background-color: #fff;
+       z-index: 1;
+    }
+    nav ul{
+       display: none;
+    }
+    .menu_icon{
+        display: block;
+    }
+    .show{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 40px;
+      position: fixed;
+      top: 65px;
+      width: 100%;
+      left: 0;
+      height: 100px;
+      background-color: #fff;
+      justify-content: center;
+     
+    }
+    nav .nav-left h2{
+        font-size: 15px;
+
+    }
+}

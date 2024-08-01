@@ -1,0 +1,26 @@
+.collections{
+    margin: 40px auto;
+    width: 90%;
+   
+}
+
+.new_collections{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  
+}
+@media(min-width:600px)and (max-width:800px){
+    .new_collections{
+        grid-template-columns: 1fr 1fr 1fr ;
+
+    }
+
+}
+@media(max-width:599px){
+    .new_collections{
+        grid-template-columns: 1fr 1fr ;
+
+    }
+
+}

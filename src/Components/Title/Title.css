@@ -1,0 +1,11 @@
+.title {
+ margin-top: 100px;
+}
+.title h1{
+    text-align: center;
+}
+.title hr{
+    width: 100px;
+  margin: auto;
+  margin-top: 5px;
+}

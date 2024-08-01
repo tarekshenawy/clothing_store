@@ -1,0 +1,15 @@
+
+.Related_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin-top: 30px;
+
+}
+@media(max-width:600px){
+  .Related_items{
+    grid-template-columns: 1fr 1fr ;
+
+  }
+
+}
